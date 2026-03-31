@@ -1,0 +1,36 @@
+[
+{
+"id":1,
+"name":"Running Shoes",
+"price":1999,
+"category":"fashion"
+},
+{
+"id":2,
+"name":"Smart Watch",
+"price":2999,
+"category":"electronics"
+},
+{
+"id":3,
+"name":"Headphones",
+"price":1499,
+"category":"electronics"
+},
+{
+"id":4,
+"name":"Laptop",
+"price":55000,
+"category":"electronics"
+}
+]
+[
+{
+"name":"Laptop",
+"price":55000
+},
+{
+"name":"Shoes",
+"price":1999
+}
+]

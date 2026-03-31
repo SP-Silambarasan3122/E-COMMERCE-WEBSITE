@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>E-Commerce Website</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<header class="navbar">
+
+<h1 class="logo">ShopEasy</h1>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="cart.html">Cart</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+</header>
+<section class="slider">
+
+<img id="slide-image" src="images/slide1.jpg" width="100%">
+
+</section>
+<section class="products">
+
+<h2>Latest Products</h2>
+
+<div class="product-container">
+
+<div class="product-card">
+<img src="images/shoes.jpg">
+<h3>Running Shoes</h3>
+<p>₹1999</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="product-card">
+<img src="images/watch.jpg">
+<h3>Smart Watch</h3>
+<p>₹2999</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="product-card">
+<img src="images/headphones.jpg">
+<h3>Headphones</h3>
+<p>₹1499</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="product-card">
+<img src="images/laptop.jpg">
+<h3>Laptop</h3>
+<p>₹55000</p>
+<button>Add to Cart</button>
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+<h2>Latest Products</h2>
+
+<div class="product">
+<h3>Shoes</h3>
+<p>Price: ₹2000</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="product">
+<h3>Watch</h3>
+<p>Price: ₹3000</p>
+<button>Add to Cart</button>
+</div>
+
+</section>
+<section class="search-box">
+
+<input 
+type="text" 
+id="searchInput" 
+placeholder="Search products..."
+onkeyup="searchProducts()">
+
+</section>
+<select id="categoryFilter" onchange="filterCategory()">
+
+<option value="all">All Products</option>
+<option value="fashion">Fashion</option>
+<option value="electronics">Electronics</option>
+
+</select>
+<div class="product-card" data-category="fashion">
+<img src="images/shoes.jpg">
+<h3>Running Shoes</h3>
+<p>₹1999</p>
+<button onclick="addToCart('Running Shoes',1999)">Add to Cart</button>
+</div>
+
+<div class="product-card" data-category="electronics">
+<img src="images/watch.jpg">
+<h3>Smart Watch</h3>
+<p>₹2999</p>
+<button onclick="addToCart('Smart Watch',2999)">Add to Cart</button>
+</div>
+
+<div class="product-card" data-category="electronics">
+<img src="images/headphones.jpg">
+<h3>Headphones</h3>
+<p>₹1499</p>
+<button onclick="addToCart('Headphones',1499)">Add to Cart</button>
+</div>
+
+<div class="product-card" data-category="electronics">
+<img src="images/laptop.jpg">
+<h3>Laptop</h3>
+<p>₹55000</p>
+<button onclick="addToCart('Laptop',55000)">Add to Cart</button>
+</div>
+
+<script src="js/script.js"></script>
+<div class="rating">
+<span>⭐</span>
+<span>⭐</span>
+<span>⭐</span>
+<span>⭐</span>
+<span>☆</span>
+</div>
+<button>-</button>
+<span>1</span>
+<button>+</button>
+<button onclick="topFunction()" id="topBtn">↑</button>
+
+</body>
+</html>
